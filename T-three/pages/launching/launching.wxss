@@ -1,0 +1,33 @@
+/* pages/launching.wxss */
+/*自己写的代码  */
+.background{
+  width:100%;
+  height:100vh;
+  text-align: center;
+  position: absolute;
+  background-image:url("http://static-1253586872.file.myqcloud.com/shop/2284/17996c07-20c7-4eb6-bf5d-301dc0860d20.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+.logo{
+  /* width:160rpx; */
+  /* height:70rpx; */
+  display:block;
+  width: 100%;
+  /* margin:0 auto; */
+  color: #fff;
+  font-size: 30rpx;
+  /* background-image:url("http://img.zcool.cn/community/018f235a0c1710a801204a0ee2a156.png@1280w_1l_2o_100sh.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%; */
+  /* left: calc(50vw - 80rpx); */
+  position: absolute;
+  top: 90vh;
+}
+
+
+.version{
+   display:block;
+  width: 100%;
+  margin-top: 10rpx;
+}

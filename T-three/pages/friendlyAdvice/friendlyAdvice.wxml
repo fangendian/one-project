@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="background">
+  <!-- <view class="logo" bindtap="CooperationcConsultation"></view> -->
+  <form report-submit='true' bindsubmit='CooperationcConsultation'>
+    <button class="logoText" form-type='submit'>{{logoText}}</button>
+  </form>
+</view>
+
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>

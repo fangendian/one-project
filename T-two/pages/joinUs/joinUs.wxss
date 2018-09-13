@@ -1,0 +1,79 @@
+/* pages/mine/joinUs/joinUs.wxss */
+.mask-page{
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.comtainer{
+  width: 79%;
+  /* height: 70%; */
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  text-align: center;
+  background-color: white;
+  z-index: 999;
+  padding: 10rpx 50rpx 50rpx 50rpx;
+  border-radius: 20rpx;
+}
+
+.title{
+  font-size: 50rpx;
+  font-weight: bold;
+  display: block;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.cancel{
+  margin: 0 10rpx 0 0;
+  width: 80rpx;
+  height: 80rpx;
+  right: 0;
+  position: absolute;
+}
+/*收集formId的按钮  */
+.formId-btn{
+  background-color: transparent;
+}
+.formId-btn::after{
+  border: 0;
+}
+
+.title-desc {
+  font-size: 26rpx;
+  text-align: left;
+  display: inline-block;
+  color: #333;
+}
+
+.note {
+  font-size: 26rpx;
+  display: block;
+  margin-top: 16rpx;
+  text-align: left;
+  color: #333;
+}
+
+input{
+  color: #bbb;
+  border: 1rpx solid #bbb;
+  display: block;
+  margin-top: 6rpx;
+  height: 60rpx;
+}
+
+input.big{
+  height: 120rpx;
+}
+
+.submit {
+  height: 120rpx;
+  margin-top: 40rpx;
+  padding: 55rpx;
+  color: white;
+}

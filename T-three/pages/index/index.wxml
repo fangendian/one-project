@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="background">
+  <image src='http://static-1253586872.file.myqcloud.com/shop/2284/64622745-c33f-46a7-84b6-0726995efaed.png'
+          mode='widthFix' style='width:100vw;margin-top:12vh;'></image>
+  <form report-submit='true' bindsubmit='gotoInformation'>
+    <button class='clickTest1 formId-btn' form-type='submit'>
+      <text>立即测一测</text>
+    </button>
+  </form>
+    <!-- <navigator url="../information/information">立即测一测</navigator> -->
+  <!-- <view class='clickTest2'>
+    <text>测试抽大奖</text>
+  </view> -->
+</view>

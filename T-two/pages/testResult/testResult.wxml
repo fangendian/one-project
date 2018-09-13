@@ -1,0 +1,77 @@
+<!--index.wxml-->
+
+<view class='background'>
+  <view class='background_1'>
+    <view class="p-t-15">
+      <text class='title'>恋爱倒计时...</text>
+    </view>
+    <view class="p-b-25 p-t-10">
+      <text class='star'></text>
+      <text class='star'></text>
+      <text class='star'></text>
+      <text class='star'></text>
+      <text class='starText'>{{testNumbers}}人在测</text>
+    </view>
+    <view class="p-t-15">
+      <text class='title' style="font-size:{{view.fontSize}}">{{testResults}}</text>
+    </view>
+    <view class="shareAndCard flex-column" style="margin-top:{{view.marginTop}}">
+      <form report-submit='true' bindsubmit='shareSomething' class='look-other'>
+        <button form-type='submit' open-type="share" class='friendsShare' style="font-size:{{buttonFont}}">看看和谁是绝配</button>
+      </form>
+      <!-- <form report-submit='true' bindsubmit='generateCard'>
+        <button form-type='submit' class='generateCard' style="font-size:{{buttonFont}}">
+          {{jumpInfor.appSynopsis}}
+        </button>
+      </form> -->
+    </view>
+    <view class='shareThings'>大牌好物免费抢</view>
+    <view class='free-box'>
+      <view class='free-detail' bindtap='jumpMiniprogram' wx:for='{{freeLoop}}' id='{{item.id}}' data-productionid='{{item.productionid}}'>
+        <image src='{{item.imageurl2}}' class='img-detail'></image>
+        <view class='goods-detail'>
+          <text class='price'>￥</text><text class='money'>{{item.present_price}}</text>
+          <text class='prices'>￥{{item.original_price}}</text>
+          <text class='gloabl-goods'>{{item.name}}</text>
+          <image src='../../images/qiang.png' class='free-img'></image>
+        </view>
+      </view>
+    </view>
+    <form report-submit='true' bindsubmit='CooperationcConsultation'>
+      <button form-type='submit' class='formId-btn'> 
+        <image src='../../images/logo.png' class='logo'></image>
+        <view class="logoText">靠谱小程序出品</view>
+       </button>
+    </form> 
+  </view>
+
+  
+    
+   <view class='mask flex-row flex-center flex-middle' 
+      hidden="{{previewHidden}}" bindtap='hidePreview'> 
+  <!--卡片预览  -->
+    <!-- <image id="previewImg" style="width:{{phoneWidth/2}}px;height:{{phoneHeight/2}}px" bindtap="previewImg" src="{{imagePath}}"></image> -->
+      <view id="previewImg" style="width:{{phoneWidth/1.5}}px;height:{{phoneHeight/1.5}}px;background-image:url({{imagePath}})">
+        <icon  bindtap='hidePreview' class='closeIcon flex-row flex-right' type='cancel' size='25' color='white'></icon>
+    </view>
+    <view class='flex-column' style='width:{{phoneWidth/1.5}}px;'>
+      <form report-submit='true' bindsubmit='saveImg'>
+        <button class='saveButton' form-type='submit'>保存</button>
+      </form>
+       <form report-submit='true' bindsubmit='shareImg'>
+        <button type='primary' open-type='contact' session-from='{{imagePath}}'
+        send-message-img='{{imagePath}}' form-type='submit'
+        class='shareButton'>分享到朋友圈</button> 
+      </form>
+      
+    </view>
+  </view> 
+
+  <canvas  class="{{canvasHidden? 'canvas-Hidden':'canvasShow'}}" canvas-id="mycanvas"/>
+</view>
+
+
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>

@@ -1,0 +1,117 @@
+/*自己写的样式代码！！！*/
+.background1{
+  width:100%;
+  height:75vh;
+  background-image: url('http://img.zcool.cn/community/0171335a0c2b64a801204a0e83354f.png@1280w_1l_2o_100sh.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.text1{
+  color:#fff;
+  padding-top: 25vh;
+}
+.text2{
+  color:yellow;
+  padding-top:5px;
+}
+.btn1{
+  width:100px;
+  height:30px;
+  display: block;
+  background-color: #3194db;
+  font-size:14px;
+  color:#fff;
+  line-height: 30px;
+  margin: 0 auto;
+  border-radius:15px 15px;
+  margin-top:20px;
+}
+.img1{
+  width:150px;
+  height:307px;
+  margin-top: 8vh;
+}
+.text3{
+  color:#3194db;
+  font-size:16px;
+  text-decoration-line: underline;
+  padding-top: 10px;
+}
+.text4{
+  font-size:12px;
+  padding-top:5px;
+}
+.background2{
+  width:75%;
+  height:50vh;
+  margin: 0 auto;
+  background-image: url('http://img.zcool.cn/community/01cd035a0c2b64a80121985cbd6088.png@1280w_1l_2o_100sh.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  margin-top: 235px;
+}
+.text5{
+  color:#3194db;
+  font-size:16px;
+  text-decoration-line: underline;
+  padding-top: 110%;
+}
+.text6{
+  font-size:12px;
+  padding-top:5px;
+}
+.background3{
+  width:75%;
+  height:40vh;
+  margin: 0 auto;
+  background-image: url('http://img.zcool.cn/community/016c665a0c2b64a801204a0e9a7676.png@1280w_1l_2o_100sh.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  margin-top: 90px;
+}
+.background4{
+  width:100%;
+  height:30vh;
+  background-image: url('http://img.zcool.cn/community/018e0c5a0c2b64a80121985ce66469.png@1280w_1l_2o_100sh.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn2{
+  width:100px;
+  height:30px;
+  display: block;
+  background-color: transparent;
+  border:2px solid #fff;
+  font-size:14px;
+  color:#fff;
+  line-height: 30px;
+  margin: 0 auto;
+  border-radius:15px 15px;
+  position: relative;
+  top:50px;
+}
+.phoneNumber1{
+  font-size:16px;
+  padding-top:5px;
+  color:#fff;
+  position: relative;
+  top:60px;
+}
+.phoneNumber1Icon{
+  width:30px;
+  height:28px;
+  display:inline-block;
+  background-image: url('http://img.zcool.cn/community/0131815a0d25a9a801204a0e0f3de1.png@1280w_1l_2o_100sh.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align: sub;
+  margin-left: -50px;
+}
+.phoneNumber1Text{
+  padding-left: 15px;
+}

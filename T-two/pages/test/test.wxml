@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class='background'>
+  <view class="center p-t-25 p-b-25" style="padding-top:{{view.paddingTop1}}">
+    <text class='title'>第{{number}}题</text>
+  </view>
+  <view class="question" style="margin-top:{{view.marginTop}}">
+  {{question.question}}
+  </view>
+  <view class='list-container'>
+    <view wx:for="{{question.option}}" wx:for-index="index" wx:for-item="item" wx:key='{{index}}' class="option">
+      <text wx:if="{{index==1}}" class="ABC A"></text>
+      <text wx:elif="{{index==2}}" class="ABC B"></text>
+      <text wx:elif="{{index==3}}" class="ABC C"></text>
+      <view class='optionTextBg' >
+        <form report-submit='true' bindsubmit='optionChange' data-answerid="{{index}}" data-item='{{item}}'>
+          <button class='formId-btn' form-type='submit'> 
+              <text  class="optionText" style="font-size:{{view.fontSize}}">{{question.questiontype === 'old' ? item.title : item.optiongTest}}</text>
+          </button> 
+        </form>
+      </view>
+      
+    </view>
+  </view> 
+  <!-- <view class="logo" style="top:{{view.top1}}" bindtap="CooperationcConsultation"></view> -->
+  <form report-submit='true' bindsubmit='CooperationcConsultation'>
+    <button class="logoText formId-btn" form-type='submit'>{{logoText}}</button>
+  </form>
+</view>
+
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>

@@ -1,0 +1,43 @@
+/*自己添加的代码  */
+.preview-Hidden{
+  display: none;
+  width:  100%;
+  height: 100vh;
+  top:0;
+}
+.previewShow{
+  display: block;
+  width:  100%;
+  height: 100vh;
+  top:0;
+}
+ .image{
+  width:100%;
+  height: 100vh;
+  /* background-image:url("http://img.zcool.cn/community/01f8c05a0c18b2a801204a0e560546.jpg@1280w_1l_2o_100sh.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100%;   */
+} 
+  .canvas-Hidden{
+  display: none; 
+  width:  0;
+  height: 0;
+  position: absolute;
+  z-index: -1000;
+  word-break: break-all
+} 
+.canvasShow{
+  display: block; 
+  width:  100%;
+  height: 100vh;
+  position:absolute;
+  z-index: 1000;
+  top:0;
+  word-break: break-all;
+  overflow: scroll;
+} 
+/* .canvas{
+  display: block;
+  width:  100%;
+  height: 100vh;
+} */

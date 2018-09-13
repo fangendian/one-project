@@ -1,0 +1,109 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wx5012e56b8665baff",
+	"projectname": "old-lovetest",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "在群聊中打开小程序卡片",
+					"pathName": "pages/launching/launching",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群8",
+						"shareName": "2aV9n6GxUHbn7sxi3RHX1LkJ-NtYPsv60RYE3nNrf6I@cr4dev",
+						"shareKey": "UnJrJ6vA8p5qxw_zh_0uaBJrVT__twsPZVnrAQtuzqWaBqRNdFkKrHeuwZOTcPemUwNY_2dpKqrEk1rZ9FfsXg~~"
+					}
+				},
+				{
+					"id": -1,
+					"name": "match",
+					"pathName": "pages/matching/matching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/testResult/testResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lau",
+					"pathName": "pages/launching/launching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "aaa",
+					"pathName": "pages/friendlyAdvice/friendlyAdvice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "coop",
+					"pathName": "pages/CooperationcConsultation/CooperationcConsultation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "turn",
+					"pathName": "pages/turntable/turntable",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "gener",
+					"pathName": "pages/generateCard/generateCard",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lunch",
+					"pathName": "pages/launching/launching",
+					"query": ""
+				}
+			]
+		}
+	}
+}

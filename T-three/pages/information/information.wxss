@@ -1,0 +1,188 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.myVideo{
+  width:100%;
+  height:212px;
+}
+/*自己写的样式代码！！！*/
+.background{
+  width:100%;
+  height:100vh;
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2284/f948d8dd-f6a2-4d74-b4cc-bcb8f97b0c25.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.age{
+  display: block;
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+  background-image: url('http://img.zcool.cn/community/0188055a05a53ea801204a0e88d458.png@1280w_1l_2o_100sh.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.ageInput{
+  /* width: 70%; */
+  height:40px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 80rpx;
+  box-shadow: 0 10rpx 14rpx rgba(0,0,0,0.17);
+  /* background-image: url('http://img.zcool.cn/community/01ba7a5a0125a1a801216a4b69e9d8.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+.ageInput>input{
+  height:40px;
+  text-align: center;
+  color:#222222;
+  /* font-weight: bold; */
+}
+.phcolor{
+  /* color:#fff; */
+  color:#aaa;
+  /* font-weight: bold; */
+}
+.constellation{
+  display: block;
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+  background-image: url('http://img.zcool.cn/community/01750d5a05a53ea80121985cc12b54.png@1280w_1l_2o_100sh.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.constellationChioce{
+  /* width: 70%; */
+  height:40px;
+  margin: 0 auto;
+   background-color: #fff;
+  border-radius: 80rpx;
+  box-shadow: 0 10rpx 14rpx rgba(0,0,0,0.17);
+  /* background-image: url('http://img.zcool.cn/community/01ba7a5a0125a1a801216a4b69e9d8.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  text-align: center;
+  color:#222222;
+  line-height: 40px;
+  font-weight: bold;
+  position: relative
+}
+.arrow{
+  width: 40rpx;
+  height: 26rpx;
+  display: block;
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2284/c301ec4d-0ab9-4312-9c46-cfda79a6691b.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:30rpx;
+  right:40rpx;
+}
+.start{
+  display: block;
+  width: 30%;
+  height: 100px;
+  background-image: url('http://img.zcool.cn/community/01120f5a0125a0a801216a4be069b8.png@1280w_1l_2o_100sh.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 35%;
+}
+.animation1{
+  position: relative;
+  left: 10px;
+}
+
+
+.sex{
+  display: block; 
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+  background-image: url('http://img.zcool.cn/community/01c7305a20f52fa80120ba382aa363.png@1280w_1l_2o_100sh.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.sexRadio{
+  width:200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sexRadio_1{
+  margin-right: 10px;
+  margin-left: 10px;
+  color:#fff;
+  font-weight:bold;
+}
+.sexRadio_1>radio{
+  width:30px;
+  height: 30px;
+}
+radio {
+-webkit-tap-highlight-color:transparent;
+display:inline-block;
+}
+radio .wx-radio-input {
+-webkit-appearance:none;
+margin-right:5px;
+outline:0;
+/* background-color:#ffffff; */
+background: transparent;
+border-radius:50%;
+width:22px;
+height:22px;
+position:relative;
+}
+.male .wx-radio-input{
+border:2px solid #feb52a;
+}
+.female .wx-radio-input{
+border:2px solid #ffeb3c;
+}
+
+/*选择性别  */
+.sex-background{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25vh;
+  margin:40rpx auto;
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  box-shadow: 0 10rpx 14rpx rgba(0,0,0,0.17);
+}
+.section-sex{
+  width: 50%; 
+}
+
+.startButton{
+  color: #fff;
+  border-radius: 10rpx;
+  background: -webkit-linear-gradient(#ff00f6,#c525b8 );
+}

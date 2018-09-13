@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="log">
+  <view class='log-top clearfix'>
+    <image src='../../img/foot-ball.jpg' class='bg-img'></image>
+    <view class='keep-img'>
+      <image src='../../img/face-seled.png' class='select'></image>
+      <image src='{{src}}' class='gain-img'></image>
+    </view> 
+    <view class='keep-text'>
+      <text>头像制作成功，{{countryName}}球队已收到你的助威</text>
+    </view>
+  </view>
+   <view class='your-decsion'>
+    <form class='click-form left-m'>
+      <button class='btn-left btn-reset' open-type='share' bindtap='shareFriends'>告知好友</button>
+    </form>
+    <form class='click-form'>
+      <button class='btn-face btn-reset' bindtap='jumpDifferentPage'>生成海报</button>
+    </form>
+  </view>  
+</view>

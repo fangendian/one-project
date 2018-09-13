@@ -1,0 +1,135 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.myVideo{
+  width:100%;
+  height:212px;
+}
+/*自己写的样式代码！！！*/
+.background{
+  width:100%;
+  height:100vh;
+  background-image: url('http://img.zcool.cn/community/01c5b95a012a91a801216a4b4c2aa0.jpg@1280w_1l_2o_100sh.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.title{
+  font-size:20px;
+  color: #fff;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  line-height: 80px;
+  border-radius: 50% 50%;
+  background-color: #fc6820;
+}
+.question{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom:30px;
+  padding-left:30px;
+  padding-right:30px;
+  background-color: yellow;
+  border-radius:10px;
+  border:2px solid #000;
+}
+/*重写的css*/
+.option{
+  width: 75%;
+  margin:20px auto;
+  /* display:inline-block; */
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.ABC{
+  width: 25px;
+  height:25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  vertical-align: middle;
+  margin-right: 15px;
+  /* margin-top: 10rpx; */
+}
+.A{
+  background-image: url('http://img.zcool.cn/community/0152135a0125a0a801202b0c9207cd.png@1280w_1l_2o_100sh.png');
+}
+.B{
+  background-image: url('http://img.zcool.cn/community/017f1e5a0125a0a801202b0c3ae078.png@1280w_1l_2o_100sh.png');
+}
+.C{
+  background-image: url('http://img.zcool.cn/community/01f2825a0125a0a801216a4b280651.png@1280w_1l_2o_100sh.png');
+}
+
+.optionTextBg {
+  display: inline-block;
+  width:68%;
+  /* height:35px; */
+  background-image: url('http://img.zcool.cn/community/01fee25a0125a0a801202b0ce9cdbb.png@1280w_1l_2o_100sh.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* line-height: 35px; */
+  /* padding-left:20px; */
+  padding: 12rpx 40rpx ;
+  text-align: center;
+}
+.optionText{
+  /* display: inline-block;
+  width: 76%; */
+  /* height:35px; */
+  /* background-image: url('http://img.zcool.cn/community/01fee25a0125a0a801202b0ce9cdbb.png@1280w_1l_2o_100sh.png');  */
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  /* line-height: 35px; */
+  /* padding-left:20px; */
+  /* padding: 5rpx 40rpx ; */
+  text-align: center;
+} 
+.logo{
+  width:35px;
+  height:35px;
+  display:block;
+  margin:0 auto;
+  background-image:url("http://img.zcool.cn/community/01ac035a0c192ca80121985cd99d73.png@1280w_1l_2o_100sh.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: relative;
+  /* top:88vh; */
+  margin-top: 100rpx;
+  /* left:45%; */
+}
+.logoText{
+  color:#bbb;
+  font-size:13px;
+  position:relative;
+  /* top:95vh; */
+  text-align: center;
+  /* left:31%; */
+}
+
+.list-container {
+  min-height: 350rpx;
+}

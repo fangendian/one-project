@@ -1,0 +1,140 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wx3e09b2f50e1c6e86",
+	"projectname": "lovetest-old",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/information/information",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "matching",
+					"pathName": "pages/matching/matching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/testResult/testResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/testResult/testResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "matching",
+					"pathName": "pages/matching/matching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "matching",
+					"pathName": "pages/matching/matching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "matching",
+					"pathName": "pages/matching/matching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "launching",
+					"pathName": "pages/launching/launching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "testResult",
+					"pathName": "pages/testResult/testResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "la",
+					"pathName": "pages/launching/launching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "infor",
+					"pathName": "pages/information/information",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "infor",
+					"pathName": "pages/launching/launching",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Advice",
+					"pathName": "pages/friendlyAdvice/friendlyAdvice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lau",
+					"pathName": "pages/launching/launching",
+					"query": ""
+				}
+			]
+		}
+	}
+}

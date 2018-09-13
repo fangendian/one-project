@@ -1,0 +1,120 @@
+.log {
+  width: 100%;
+  height: auto;
+}
+.canvas1 {
+  width: 300px;
+  margin: 0 auto;
+}
+.user-img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+}
+.sureImg {
+  width: 300px;
+  height: 300px;
+  -webkit-overflow-scrolling: touch;
+}
+.img-box {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.rotate-box {
+  border: 3px #979797 dashed;
+  display: inline-block; 
+  position: relative;
+  padding: 2px;
+  display: none;
+}
+.content {
+  display: block;
+}
+.flagPhoto {
+  width: 150px;
+  height: 99px; 
+}
+.control {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  bottom: -25rpx;
+  right: -25rpx;
+}
+.select-yours {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+.you-like {
+  font-size: 30rpx;
+  margin-left: 35rpx;
+}
+.nation-flag {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.scroll-box {
+  width: 100vw;
+  height: 342rpx;
+  white-space: nowrap;
+  font-size: 0;
+}
+.flag-box {
+  width: 170rpx;
+  height: auto;
+  display: inline-block;
+  white-space:normal;
+}
+.flag-detail {
+  width: 170rpx;
+  height: 157rpx;
+  text-align: center;
+  position: relative;
+}
+.click-sel {
+  width: 22rpx;
+  height: 22rpx;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 78rpx;
+  right: 35rpx; 
+  display: none;
+}
+.show {
+  display: block;
+}
+.small-flag {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin: 15rpx auto 8rpx;
+  display: block;
+}
+.flag-name {
+  color: #707071;
+  font-size: 20rpx;
+  text-align: center;
+}
+.promt {
+  font-size: 22rpx;
+  color: #ccc;
+  margin: 10rpx 20rpx;
+  display: block;
+}
+.right-way {
+  width: 250rpx;
+  height: 70rpx;
+  margin: 0 auto 30rpx;
+}
+
+

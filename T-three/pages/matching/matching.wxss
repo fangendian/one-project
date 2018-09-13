@@ -1,0 +1,340 @@
+.percent{
+  width:100%;
+  height: 300rpx;
+  padding-top: 5rpx;
+  position: relative;
+  z-index: 2; 
+}
+.user-img {
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.progress{
+  display: inline-block;
+  width: 30%;
+  height: 110rpx;
+  text-align: center;
+  margin: -20% 3% 0 3%;
+  vertical-align: middle;
+}
+.mate {
+  width: 100%;
+  height: 20rpx;
+  background: #fff;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.mate-bar {
+  height: 100%;
+  background: red;
+}
+.user1{
+  color: #fff;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  background-color: #fc6820;
+  margin-left: 13.5%; 
+  overflow: hidden;
+}
+.user2{
+  color: #fff;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%; 
+  background-color: #fc6820;
+  overflow: hidden;
+}
+.userName{
+  color: #ffffff;
+  width:100%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.userName1{
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  left: 8%;
+  margin-top: 0.3vh;
+  width:35%;
+  text-align: center;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap; 
+}
+.userName2{
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  right: 8%;
+  margin-top: 0.3vh;
+  width:35%;
+  text-align: center;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.rankingBox{
+  width:100%; 
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+.rankings{
+  width:100%;
+  height:40vh;
+  overflow: scroll;
+  z-index: 1;
+    /* background: red;      */
+}
+.ranking{
+  width:100%;
+  height:8vh;
+}
+.firstRankingIcon{
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2284/c8e5690c-619c-450c-8d7d-1c1e0032b2fd.png');
+}
+.secondRankingIcon{
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2284/fb1846d6-e2c4-4a97-a4e0-e90345a1e9f3.png');
+}
+.thirdRankingIcon{
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2284/35407749-3f7b-4d83-8258-c62ca0654637.png');
+}
+.rankingIcon1{
+  width:56rpx;
+  height:56rpx;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 5%;
+  position: relative;
+  top: -0.7vh;
+}
+.rankingIcon2{
+  width:56rpx;
+  height:56rpx;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 5%;
+  position: relative;
+  top: -0.7vh;
+}
+.rankingIcon3{
+  width:56rpx;
+  height:56rpx;
+  display: inline-block;
+  margin-left: 5%; 
+  position: relative; 
+  top: -25rpx; 
+  text-align: center;
+}
+.even{
+  background-color:#f5f5f5;
+}
+.firstRanking{
+  /* margin-top:4.8vh; */
+}
+.firstRanking-iphonex{
+  /* margin-top:8vh!important; */
+}
+.lastRanking{
+  /* height:13vh; */
+  /* padding-bottom: 250rpx; */
+}
+.otherUserUrl1{
+  width:38px;
+  height:38px;
+  display:inline-block;
+  border-radius:50% 50%;
+  background-color: yellow;
+  margin-left: 6%;
+  vertical-align: text-bottom;
+  margin-top: 0.6vh;
+}
+.otherUserUrl2{
+  width:38px;
+  height:38px;
+  display:inline-block;
+  border-radius:50% 50%;
+  background-color: yellow;
+  margin-left: 6%;
+  vertical-align:text-bottom;
+  margin-top: 0.6vh;
+}
+.otherUserName{
+  width: 300rpx;
+  height: 20px;
+   /* background: aqua; */
+  line-height: 20px; 
+  font-size:14px;
+  position: relative;
+  top:-1.2vh; 
+  margin-left:5%;
+  display: inline-block;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.matchValue1{
+  float:right;
+  font-size:18px;
+  margin-top: 1.6vh;
+  font-weight:bold;
+  position:relative;
+  right:5%;
+  background-image: -webkit-linear-gradient(223deg, #fc71da, #963cf8);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.matchValue2{
+  color: #222;
+  float:right;
+  font-size:18px;
+  margin-top: 1.6vh;
+  font-weight:normal;
+  position:relative;
+  right:5%;
+}
+
+
+.bottomBtnGroup{
+  width: 80%;
+  height: 80rpx;
+  margin: 40rpx auto 0;
+}
+.btn-click {
+  color: #fff; 
+  height: 80rpx;
+  float: left;
+  line-height: 80rpx;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.prever{
+  width: 100%;
+  background: #FF61E8; 
+}
+.next {
+  width: 55%;
+  background: #F33535; 
+}
+.left-btn {
+  color: #fff; 
+  background: #FF61E8;
+}
+.right-btn {
+  color: #fff; 
+  background: #F33535;
+}
+.load-other{
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+.load-other {
+  margin: 4.3% 5% 0 30%;
+}
+.free-thing{
+  width: 35rpx;
+  height: 35rpx;
+  float: left;
+  margin: 8% 5% 0 13%;
+}
+.bottomBtn{
+  height: 80rpx;
+  font-size: 34rpx;
+  padding: 0;
+  margin: 0;
+  line-height: 80rpx;
+  float: left;
+}
+button{
+  overflow: visible;
+}
+.shareThings {
+  width: 100%;
+  font-size: 18px;
+  font-family: '微软雅黑';
+  text-align: center;
+  color: #000;
+  margin: 30rpx auto;
+}
+.free-box {
+  width: 90vw;
+  height: auto; 
+  margin: 0 auto;
+  font-size: 0;
+  padding: 0;
+  display: block;
+}
+.free-detail {
+  width: 42vw;
+  height: 380rpx;
+  display: inline-block; 
+  border-radius: 10rpx; 
+  overflow: hidden;
+  margin: 0 0 4% 2vw; 
+  box-shadow: 0 3rpx 25rpx #888888;
+  vertical-align: top;
+}
+.img-detail {
+  width: 42vw;
+  height: 34vw;
+}
+.goods-detail {
+  width: 100%;
+  height: calc(380rpx - 34vw); 
+  background: #fff;
+  padding: 10rpx 0 0 20rpx;
+  position: relative;
+  /* background: aqua; */
+}
+.gloabl-goods {
+  font-size: 24rpx;
+  height: 60rpx; 
+  line-height: 30rpx;  
+  color:#000;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;  
+  margin-right: 70rpx;
+}
+.goods-size {
+  font-size: 20rpx;
+  color: #ccc;
+}
+.free-img {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 11%;
+  right: 30rpx;
+}
+.price {
+  font-size: 18rpx;
+  color: red;
+}
+.money {
+  font-size: 26rpx;
+  color: red;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.prices {
+  font-size: 18rpx;
+  color: #333;
+  text-decoration: line-through;
+}

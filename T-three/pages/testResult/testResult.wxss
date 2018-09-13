@@ -1,0 +1,268 @@
+@import '../../libs/flex-layout.wxss';
+/*自己写的样式代码！！！*/
+.background{
+  width:100%;
+  /* height:100vh; */
+  height: auto;
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2267/f23e0c69-b42a-44bd-95ba-9d993d867622.jpg'); 
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  /* overflow: hidden; */
+  padding: 20rpx 0;
+}
+.background_1{
+  /* width:85%; */
+  /* height:100vh; */
+  margin: 0 auto;
+}
+.resultBox{
+  width: 75%;
+  margin: 30rpx auto 50rpx;
+  padding: 40rpx 40rpx;
+  height: 40vh; 
+  border-radius: 16rpx;
+  background-color: #ffffff; 
+  box-shadow: 0 10rpx 14rpx rgba(0,0,0,0.17);
+  color: #8f68e2;
+}
+.title{
+  font-size: 20px;
+}
+.star{
+  width:60rpx;
+  height:60rpx;
+  display: inline-block;
+  background-image: url('http://static-1253586872.file.myqcloud.com/shop/2284/3c23a874-f71c-4e8f-806a-c9951d633028.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin:0 10rpx;
+  vertical-align: sup;
+}
+.starText{
+  font-size: 14px;
+  color:#666;
+}
+.testContent{
+  min-height:380rpx;
+  font-size: 28rpx;
+  margin-top: 18rpx;
+  line-height:54rpx;
+  word-break: break-all; 
+	word-wrap:break-word;
+}
+.shareAndCard{
+  width:100%;
+  margin: 0 auto;
+  display: inline-block;
+}
+.friendsShare{
+  width: 86%;
+  background: -webkit-linear-gradient(#ff63e8, #ff42e2);
+  border-radius: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#fff;
+  box-shadow: 0 10rpx 14rpx rgba(212,99,204,0.35);
+}
+.load-page {
+  background: #E85459;
+  margin-top: 5%;
+}
+.generateCard{
+  background: -webkit-linear-gradient(#fc3296, #e94f4f);
+  border-radius: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 26rpx;
+  color:#fff;
+  box-shadow: 0 10rpx 14rpx rgba(161,112,224,0.35);
+}
+/* .logo{
+  width:35px;
+  height:35px;
+  display:block;
+  margin:0 auto;
+  background-image:url("http://img.zcool.cn/community/01ac035a0c192ca80121985cd99d73.png@1280w_1l_2o_100sh.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: absolute;
+  top:88vh;
+  left:45%;
+} */
+.logoText{
+  color:#fff;
+  height: auto;
+  line-height: inherit;
+  font-size:26rpx;
+  text-align: center; 
+}
+.shareThings {
+  width: 100%;
+  font-size: 18px;
+  font-family: '微软雅黑';
+  text-align: center;
+  color: #fff;
+  margin: 40rpx auto;
+}
+.free-box {
+  width: 90vw;
+  height: auto; 
+  margin: 0 auto;
+  font-size: 0;
+  padding: 0;
+  display: block;
+}
+.free-detail {
+  width: 42vw;
+  height: 380rpx;
+  display: inline-block; 
+  border-radius: 10rpx; 
+  overflow: hidden;
+  margin: 0 0 4% 2vw; 
+  box-shadow: 0 3rpx 25rpx #888888;
+  vertical-align: top;
+}
+.img-detail {
+  width: 42vw;
+  height: 34vw;
+}
+.goods-detail {
+  width: 100%;
+  height: calc(420rpx - 40vw);
+  background: #fff;
+  padding: 10rpx 0 0 20rpx;
+  position: relative;
+}
+.gloabl-goods {
+  font-size: 24rpx;
+  height: 60rpx; 
+  line-height: 30rpx;  
+  color:#000;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;  
+  margin-right: 70rpx; 
+}
+.goods-size {
+  font-size: 20rpx;
+  color: #ccc;
+}
+.free-img {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20%;
+  right: 30rpx;
+}
+.price {
+  font-size: 18rpx;
+  color: red;
+}
+.money {
+  font-size: 26rpx;
+  color: red;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.prices {
+  font-size: 18rpx;
+  color: #333;
+  text-decoration: line-through;
+}
+.logo {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.logo-texts {
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+}
+.formId-btn {
+  width: 100%;
+  height: auto;
+  margin: 20rpx auto;
+}
+
+
+/*生成卡片  */
+/*自己添加的代码  */
+.preview-Hidden{
+  display: none;
+  width:  100%;
+  height: 100vh;
+  top:0;
+}
+.previewShow{
+  display: block;
+  width:  100%;
+  height: 100vh;
+  top:0;
+}
+
+/*添加预览图片样式  */
+#previewImg{
+  z-index: 999;
+  height: 400px;
+  width: 300px;
+  border-radius: 10rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+ .image{
+  /* width:100%;
+  height: 100vh; */
+  /* background-image:url("http://img.zcool.cn/community/01f8c05a0c18b2a801204a0e560546.jpg@1280w_1l_2o_100sh.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100%;   */
+} 
+  .canvas-Hidden{
+  display: none; 
+  width:  0;
+  height: 0;
+  position: absolute;
+  z-index: -1000;
+  word-break: break-all
+} 
+.canvasShow{
+  display: block; 
+  width:  100%;
+  height: 100vh;
+  position:absolute;
+  z-index: 100;
+  top:100vh; 
+  word-break: break-all;
+  overflow: scroll;
+} 
+
+.mask{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.closeIcon{
+  font-size: 30px;
+  position: relative;
+  color: white;
+}
+
+.closeIcon{
+  margin: 10rpx;
+}
+
+.saveButton{
+  width: 30%;
+  margin-right: 5%;
+}
+
+.shareButton{
+  width: 65%;
+}

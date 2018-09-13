@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class='background'>
+  <!-- <view class="center p-t-25 p-b-25" style="padding-top:{{view.paddingTop1}}">
+    <text class='title'>第{{number}}题</text>
+  </view> -->
+  <view class='newTitle center'>
+    <block wx:if="{{question.question.length>12}}"> 
+     <view style='width:80rpx;margin-right:10rpx;display:inline-block;vertical-align:top;'>Q{{number}}: </view>
+     <view style='width:calc(90% - 90rpx);display:inline-block;text-align:justify;'> 
+      <text>{{question.question}}</text>
+    </view> 
+    </block>
+    <text wx:else>Q{{number}}: {{question.question}}</text>  
+  </view>
+  <!-- <view class="question" style="margin-top:{{view.marginTop}}">
+  {{question.question}}
+  </view> -->
+  <view class='list-container flex-row '>
+    <view class='questionOptions flex-row flex-middle'>
+      <view>
+        <view wx:for="{{question.option}}" wx:for-index="index" wx:for-item="item" wx:key='{{index}}' class="option">
+          <text wx:if="{{index==1}}" class="ABC A"></text>
+          <text wx:elif="{{index==2}}" class="ABC B"></text>
+          <text wx:elif="{{index==3}}" class="ABC C"></text>
+          <!--新老题选项  -->
+          <form report-submit='true' style='width:100%' bindsubmit='optionChange' data-answerid="{{index}}" data-item='{{item}}'> 
+            <button wx:if="{{question.questiontype=='old'}}" class='optionTextBg formId-btn {{item.title.length<10?"center":""}}' 
+                  form-type='submit'>
+                <text class="optionText">{{item.title}}</text>
+            </button>
+            <button wx:else class='optionTextBg formId-btn {{item.optiongTest.length<10?"center":""}}' form-type="submit">
+                <text class="optionText">{{item.optiongTest}}</text>
+            </button>
+          </form> 
+      </view>
+      </view>
+    </view>
+    
+    <view class='list-bottom' hidden='{{question.questiontype&&question.questiontype==="old"||(!questionLength)}}'>
+      <progress class='questionProgress' stroke-width="10" 
+       percent='{{number*10}}'backgroundColor='#ffffff' activeColor='#df88b5'></progress>
+      <view class='progress-content'>
+        <text class='progress-left'>测试进度</text>
+        <text class='progress-right'>{{number}}/{{questionLength}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='logo-img'>
+     <form report-submit='true' bindsubmit='CooperationcConsultation'>
+      <button class="logoText formId-btn" form-type='submit'>{{logoText}}</button>
+    </form> 
+    <!-- <image  style='height:70rpx;' mode='aspectFit'  bindtap="CooperationcConsultation"
+         src='http://img.zcool.cn/community/018f235a0c1710a801204a0ee2a156.png@1280w_1l_2o_100sh.png'></image> -->
+  </view> 
+  <!-- <view class="logo" style="top:{{view.top1}}" bindtap="CooperationcConsultation"></view> -->
+  <!-- <view class="logoText" bindtap="CooperationcConsultation">{{logoText}}</view> -->
+</view>
+
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>

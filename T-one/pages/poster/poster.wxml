@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+<view class="poster">
+  <view class='poster-show'>
+    <view class='poster-box {{str > 1.9 ? "poster-box-two" : "poster-box-one"}}'>
+      <image src='{{userSelectedImg}}' class='getedImg getedImg-one'></image>
+      <image src='{{firstImg}}' class='{{str > 1.9 ? "userPoster-two" : "userPoster-one"}}'></image>
+    </view>
+  </view> 
+  <view class='sel-poster'>
+    <scroll-view class='poster-small' scroll-x="true">
+      <view class='scroll-box {{str > 1.9 ? "scroll-box-two" : "scroll-box-one"}} {{item.posterId == posterId ? "poster-selected" : ""}}' wx:for="{{posterArrOne}}" bindtap='selectedPoster' id="{{item.posterId}}">
+        <image src='{{item.posterUrl}}'></image>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='botton-btn'> 
+    <form class='s-button'>
+       <button class='btn-face btn-reset' open-type='share' bindtap='shareFriends'>分享给好友</button> 
+    </form>
+    <form class='s-button'>
+       <button class='btn-face btn-reset' bindtap='keepCountryPoster'>保存到相册</button> 
+    </form>
+  </view>   
+</view>
+<view class='canvas'>
+  <canvas canvas-id='canvas' style='width:{{posterWidth}}px;height:{{posterHeight}}px;'></canvas>
+</view>
+
+  
+

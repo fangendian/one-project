@@ -1,0 +1,15 @@
+<!--pages/launching.wxml-->
+<!-- <text>pages/launching.wxml</text> -->
+<view class="background">
+<image src='http://static-1253586872.file.myqcloud.com/shop/2284/64622745-c33f-46a7-84b6-0726995efaed.png'
+          mode='widthFix' style='width:100vw;margin-top:12vh;'></image>
+<authorize wx:if="{{showAthorize}}" bind:authorizeSuccess="authorizeSuccess"></authorize>
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>
+   <view class="logo">
+    <text>靠谱小程序 提供技术支持</text>
+    <text class='version'>{{miniprogramVersion}}</text> 
+   </view>
+</view>

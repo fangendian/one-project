@@ -1,0 +1,260 @@
+@import '../../libs/flex-layout.wxss';
+/*自己写的样式代码！！！*/
+.background{
+  width: 100%;
+  height: auto; 
+  background-image: url('http://img.zcool.cn/community/01c5b95a012a91a801216a4b4c2aa0.jpg@1280w_1l_2o_100sh.jpg'); 
+  background-repeat: repeat; 
+   /* background-position: 0% 0%;  */
+    background-size: 375px 600px;    
+}
+.background_1{
+  width: 100%;
+  height: auto; 
+}
+.p-t-15,.p-b-25 {
+  width:80%;
+   margin: 0 auto; 
+}
+.lunch-text {
+  height: 40vh;
+  margin: 20rpx auto;
+}
+.title{
+  font-size: 16px;
+  line-height: 24px; 
+}
+.star{
+  width:20px;
+  height:20px;
+  display: inline-block;
+  background-image: url('http://img.zcool.cn/community/014cc55a0125a0a801216a4b7dac1e.png@1280w_1l_2o_100sh.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-right: 10px;
+  vertical-align: sup;
+}
+.starText{
+  font-size: 14px;
+  color:#666;
+}
+.shareAndCard{
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.look-other {
+  width: 80%;
+  margin: 40rpx auto;
+  display: block;
+}
+.friendsShare{
+  background-color:#09bb07;
+  color:#fff;
+  text-align: center;
+  /* margin-top: 45px; */
+}
+.generateCard{
+  background-color:#e94f4f;
+  text-align: center;
+  margin-top: 40rpx;
+  color:#fff;
+}
+/* .logo{
+  width:35px;
+  height:35px;
+  display:block;
+  margin:0 auto;
+  background-image:url("http://img.zcool.cn/community/01ac035a0c192ca80121985cd99d73.png@1280w_1l_2o_100sh.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: absolute;
+  top:88vh;
+  left:45%;
+} */
+.logoText{
+  color:#bbb;
+  font-size:13px;
+  text-align: center;
+  left:26%;
+  bottom: 10vw;
+}
+.formId-btn{
+  width: 100%;
+  height: auto;
+  margin: 20rpx auto 40rpx;
+} 
+.shareThings {
+  width: 100%;
+  font-size: 18px;
+  font-family: '微软雅黑';
+  text-align: center;
+  color: #000;
+  margin: 40rpx auto;
+}
+.free-box {
+  width: 90vw;
+  height: auto; 
+  margin: 0 auto;
+  font-size: 0;
+  padding: 0;
+  display: block;
+}
+.free-detail {
+  width: 42vw;
+  height: 380rpx;
+  display: inline-block; 
+  border-radius: 10rpx; 
+  overflow: hidden;
+  margin: 0 0 4% 2vw; 
+  box-shadow: 0 3rpx 25rpx #888888;
+  vertical-align: top;
+}
+.img-detail {
+  width: 42vw;
+  height: 34vw;
+}
+.goods-detail {
+  width: 100%;
+  height: calc(400rpx - 40vw);
+  background: #fff;
+  padding: 10rpx 0 0 20rpx;
+  position: relative;
+}
+.gloabl-goods {
+  font-size: 24rpx;
+  height: 60rpx; 
+  line-height: 30rpx;  
+  color:#000;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;  
+  margin-right: 70rpx; 
+}
+.goods-size {
+  font-size: 20rpx;
+  color: #ccc;
+}
+.free-img {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20%;
+  right: 30rpx;
+}
+.price {
+  font-size: 18rpx;
+  color: red;
+}
+.money {
+  font-size: 26rpx;
+  color: red;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.prices {
+  font-size: 18rpx;
+  color: #333;
+  text-decoration: line-through;
+}
+.koopoo {
+  width: 100%;
+  margin: 0 auto 30rpx;
+  text-align: center;
+}
+.logo {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.logo-text {
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+}
+
+
+/*生成卡片  */
+/*自己添加的代码  */
+.preview-Hidden{
+  display: none;
+  width:  100%;
+  height: 100vh;
+  top:0;
+}
+.previewShow{
+  display: block;
+  width:  100%;
+  height: 100vh;
+  top:0;
+}
+
+/*添加预览图片样式  */
+#previewImg{
+   /* position: absolute;  */
+   /* top: 100rpx;  */
+  z-index: 999;
+  height: 400px;
+  width: 300px;
+  border-radius: 10rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+ .image{
+  /* width:100%;
+  height: 100vh; */
+  /* background-image:url("http://img.zcool.cn/community/01f8c05a0c18b2a801204a0e560546.jpg@1280w_1l_2o_100sh.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100%;   */
+} 
+  .canvas-Hidden{
+  display: none; 
+  width:  0;
+  height: 0;
+  position: absolute;
+  z-index: -1000;
+  word-break: break-all
+} 
+.canvasShow{
+  display: block; 
+  width:  100%;
+  height: 100vh;
+  position:absolute;
+  z-index: 100;
+  top:100vh; 
+  word-break: break-all;
+  overflow: scroll;
+} 
+
+.mask{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.5);
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.closeIcon{
+  font-size: 30px;
+  position: relative;
+  color: white;
+}
+
+.closeIcon{
+  margin: 10rpx;
+}
+
+.saveButton{
+  width: 30%;
+  margin-right: 5%;
+}
+
+.shareButton{
+  width: 65%;
+}

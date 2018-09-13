@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="background">
+  <form report-submit='true' bindsubmit='gotoInformation'>
+    <button class='clickTest1 formId-btn' form-type='submit'>
+      <text>点击测试</text>
+    </button>
+  </form>
+  <!-- <view class='clickTest2'>
+    <text>测试抽大奖</text>
+  </view> -->
+</view>

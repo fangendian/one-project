@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="world-cup-preview">
+  <view class='world-cup-preview-top clearfix'>
+    <image src='../../img/foot-ball.jpg' class='bg-img'></image>
+     <view class='keep-img'>
+      <image src='../../img/face-seled.png' class='select'></image>
+      <image src='{{src}}' class='gain-img'></image>
+    </view> 
+    <view class='keep-text'>
+      <text>制作成功，大力神杯头像蓄势待发，请到手机相册查看！</text>
+    </view>
+  </view>
+   <view class='your-decsion'>
+    <form class='click-form left-m'>
+      <button class='btn-left btn-reset' open-type='share' bindtap='shareFriends' id='index'>告知好友</button>
+    </form>
+    <form class='click-form'>
+      <button class='btn-face btn-reset' bindtap='jumpDifferentPage' id='poster'>生成海报</button>
+    </form>
+  </view>  
+</view>

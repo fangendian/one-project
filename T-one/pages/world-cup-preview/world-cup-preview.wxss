@@ -1,0 +1,32 @@
+.world-cup-preview {
+  width: 100%;
+  height: auto;
+}
+.log-world-cup-preview-top {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.bg-img {
+  width: 100%;
+  height: calc(100vw / 2.5);
+  margin: 0;
+}
+.huge-world-cup {
+  width: 97rpx;
+  position: absolute;
+  right: 16rpx;
+  bottom: 10rpx;
+}
+.huge-world-cup-one {
+  height: 127rpx;
+}
+.huge-world-cup-two {
+  height: 97rpx;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #fff;
+}
+.your-decsion {
+  margin-top: 30vh;
+}

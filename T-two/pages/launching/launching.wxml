@@ -1,0 +1,13 @@
+<!--pages/launching.wxml-->
+<!-- <text>pages/launching.wxml</text> -->
+<view class="background">
+  <view class='show'>
+    <image src='../../images/logo.png' class='logo'></image>
+    <view class="logoText">靠谱小程序出品</view>
+  </view>
+</view>
+ <authorize wx:if="{{showAthorize}}" bind:authorizeSuccess="authorizeSuccess"></authorize> 
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>

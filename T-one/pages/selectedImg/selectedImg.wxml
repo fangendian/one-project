@@ -1,0 +1,21 @@
+<view class="log">
+  <view class='user-img'>
+    <view class='img-box' catchtouchstart="touchstartCallback"  catchtouchmove="touchmoveCallback" catchtouchend="touchendCallback">
+      <image src='{{userImg}}' style="transform:translate({{stv.offsetX}}px, {{stv.offsetY}}px);width:{{width}}px;height:{{height}}px" class='move-img'></image>
+    </view>
+  </view>
+  <view class='select-yours'>
+    <text class='promt'>提示：选择合适的图片，并调整图片大小至正确位置; 详情请关注靠谱好物公众号。</text>
+  </view>
+  <view class='your-decsion'>
+    <form class='click-form left-m' bindtap='changeImg'>
+      <button class='btn-left btn-reset'>更换头像</button>
+    </form>
+    <form class='click-form' bindtap='keepImgs'>
+      <button class='btn-face btn-reset'>下一步</button>
+    </form>
+  </view>
+</view>
+<view class='canvas'>
+  <canvas canvas-id='canvas' style='width:300px;height:300px;'></canvas> 
+</view>

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="background">
+  <!-- <view class="logo" bindtap="CooperationcConsultation"></view> -->
+  <view class="logoText" bindtap="CooperationcConsultation">{{logoText}}</view>
+</view>
+
+<join-us 
+  id="joinUs"
+  hasTab= "0"
+  bind:submit="submit"/>

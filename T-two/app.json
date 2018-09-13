@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/launching/launching",
+    "pages/matching/matching",
+    "pages/test/test",
+    "pages/testResult/testResult",
+    "pages/friendlyAdvice/friendlyAdvice",
+    "pages/information/information",
+    "pages/CooperationcConsultation/CooperationcConsultation",
+    "pages/turntable/turntable",
+    "pages/index/index",
+    "pages/generateCard/generateCard"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测测你和群内谁是绝配",
+    "navigationBarTextStyle":"black"
+  }
+}

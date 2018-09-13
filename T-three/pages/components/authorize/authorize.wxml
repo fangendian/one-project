@@ -1,0 +1,5 @@
+<!--pages/components/authorize/authorize.wxml-->
+<view class='authorizeContainer'>
+  <button class="loginView" open-type="getUserInfo" bindgetuserinfo="fetchUserInfo">
+  </button>
+</view>

@@ -1,0 +1,90 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.poster {
+  width: 100%;
+  height: auto;
+}
+.poster-show {
+  width: 100%;
+  background: #f5f2f2;
+  padding: 25rpx 0;
+}
+.poster-box {
+  width: 425rpx;
+  margin: 0 auto;
+  background: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+.poster-box-one {
+  height: 756rpx;
+}
+.poster-box-two {
+  height: 850rpx;
+}
+.getedImg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%; 
+  border: 3px solid #fff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.userPoster-one {
+  width: 425rpx;
+  height: 756rpx;
+}
+.userPoster-two {
+  width: 425rpx;
+  height: 850rpx;
+}
+.sel-poster {
+  width: 100%; 
+  height: 220rpx;
+  padding: 8rpx 0; 
+}
+ .poster-small {
+  width: 100%; 
+  height: 220rpx;
+  white-space: nowrap; 
+} 
+.scroll-box {
+  width: 120rpx;
+  background: #ccc;
+  margin-left: 10rpx;
+  display: inline-block;
+}
+.scroll-box-one {
+  height: 213rpx;
+}
+.scroll-box-two {
+  height: 240rpx;
+}
+.poster-selected {
+  border: 2rpx solid #fb0e42;
+}
+.scroll-box image {
+  width: 100%;
+  height: 100%;
+}
+.botton-btn {
+  width: 600rpx;
+  height: 180rpx;
+  margin: 42rpx auto;
+}
+.s-button {
+  display: inline-block;
+  margin-left: 30rpx;
+}
+.btn-keep {
+  width: 100%;
+  height: 80rpx;
+  background: #000;
+  color: #fff;
+  line-height: 80rpx;
+}
+

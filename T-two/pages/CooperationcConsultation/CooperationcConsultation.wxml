@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view>
+  <view class="background1">
+    <view class="text1">{{text1}}</view>
+    <view class="text2">{{text2}}</view>
+    <view class="btn1" bindtap="alertPhone">{{btn1}}</view>
+    <image class="img1" mode="aspectFill" src="{{img1}}"></image>
+    <view class="text3">{{text3}}</view>
+    <view class="text4">{{text4}}</view>
+  </view>
+  <view class="background2">
+    <view class="text5">{{text5}}</view>
+    <view class="text6">{{text6}}</view>
+  </view>
+  <view class="background3"></view>
+  <view class="background4">
+    <view class="btn2" bindtap="alertPhone">{{btn2}}</view>
+    <view class="phoneNumber1">
+      <text class='phoneNumber1Icon'></text>
+      <text class='phoneNumber1Text'>{{phoneNumber1}}</text>
+    </view>
+  </view>
+</view>

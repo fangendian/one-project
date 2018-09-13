@@ -1,0 +1,41 @@
+<!--logs.wxml-->
+<view class="world-cup">
+  <view class='img-cup'>
+    <view class='img-box'  catchtouchstart="touchstartCallback"  catchtouchmove="touchmoveCallback" catchtouchend="touchendCallback">
+        <image src='{{src}}' style="transform:translate({{stv.offsetX}}px, {{stv.offsetY}}px);width:{{imgInfo.width}}px;height:{{imgInfo.height}}px"></image>  
+    </view>
+     <image src='{{flagImg}}' class='slider-img {{flagId === "33" ? "slider-one" : "slider-two"}}'></image> 
+  </view>
+  <view class='select-yours'>
+    <text class='you-like'>选择你喜欢的国家</text>
+    <view class='nation-flag'>
+      <scroll-view class='scroll-box' scroll-x="true">
+        <view class='flag-box' wx:for="{{flagArr}}" wx:for-item="firstItem">
+          <view class='flag-detail {{firstItem.length === 1 ? "show-normal" : ""}}' wx:for="{{firstItem}}">
+             <image src='{{item.countryFlagUrl}}' class=' {{item.countryName === "" ? "first-flag" : "small-flag"}}' catchtap='selectFlag' id='{{item.countryId}}'></image>
+            <text class='flag-name'>{{item.countryName}}</text>
+            <image src='../../img/face-sel.png' class='click-sel {{item.countryId == flagId ? "show" : ""}} '></image>   
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <text class='promt'>提示：选择你支持的国家队，生成球迷专属助威脸谱。为了成像更完美，拍摄时脸部尽可能居中！</text>
+  </view>
+  <view class='your-decsion'>
+    <form class='click-form left-m' bindtap='changeUserImg'>
+      <button class='btn-left btn-reset'>更换头像</button>
+    </form>
+    <form class='click-form' bindtap='loadImg'>
+      <button class='btn-face btn-reset'>保存</button>
+    </form>
+  </view>
+  <view class='koopoo'>
+    <image src='../../img/logo.png' class='logo'></image>
+    <text class='logo-text'>靠谱小程序出品</text>
+  </view>
+</view>
+<view class='canvas'>
+  <canvas canvas-id='canvas' style='width:250px;height:250px;'></canvas>
+</view>
+
+

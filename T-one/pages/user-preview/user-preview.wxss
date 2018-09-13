@@ -1,0 +1,24 @@
+.log {
+  width: 100%;
+  height: auto;
+}
+.log-top {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.bg-img {
+  width: 100%;
+  height: calc(100vw / 2.5);
+  margin: 0;
+}
+.your-decsion {
+  margin-top: 30vh;
+}
+.top-flag {
+  width: 50vw;
+  height: 34vw;
+  position: absolute;
+  top: -77rpx;
+  left: 18rpx;
+}

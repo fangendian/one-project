@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='box clearfix'>
+    <image src='http://static-1253586872.file.myqcloud.com/mfq/production/url/f48b6a3b967945558f571967ef312f93.png' class='index-bear'></image>
+    <form>
+      <button open-type="getUserInfo" bindgetuserinfo="jumpPage" wx:if="{{canIUse}}" class='add-face' id='add-face'>
+        <image src='../../img/index-show.jpg' class='index-img'></image>
+        <view class='btn-face'>助威头像</view>
+        <text class='click-text'>点击生成助威头像</text>
+      </button>
+    </form>
+    <form>
+      <button open-type="getUserInfo" bindgetuserinfo="jumpPage" wx:if="{{canIUse}}" class='add-face' id='world-cup'>
+        <image src='http://static-1253586872.file.myqcloud.com/mfq/production/url/cfed86073bff49178350f95a3ff00548.png' class='index-img'></image>
+        <image src='http://static-1253586872.file.myqcloud.com/mfq/production/url/e9fa7c77555f400ba47fd14cf9c6853a.png' class='huge-img'></image>
+        <view class='btn-face'>大力神杯</view>
+        <text class='click-text'>点击生成世界杯头像</text>
+      </button>
+    </form>
+    <view class='free-loop'>
+      <view class='loop-title'>
+        <view class='loop-text'>世界杯周边</view> 
+        <text class='bot-title'>以“周边”之名, 致敬2018世界杯, 成就你的足球热爱</text>
+      </view>
+      <view class='free-box'>
+        <view class='free-detail' wx:for="{{freeLoop}}" id='{{item.id}}' data-productionid='{{item.productionid}}' bindtap='jumpMiniprogram'>
+          <image src='{{item.imageurl2}}' class='img-detail'></image>
+          <view class='goods-detail'>
+            <text class='price'>￥</text><text class='money'>{{item.present_price}}</text>
+            <text class='prices'>￥{{item.original_price}}</text>
+            <text class='gloabl-goods'>{{item.name}}</text>
+            <image src='../../img/qiang.png' class='free-img'></image>
+          </view>
+        </view>
+      </view>
+      <view class='koopoo'>
+        <image src='../../img/logo.png' class='logo'></image>
+        <text class='logo-text'>靠谱小程序出品</text>
+      </view>
+    </view>
+  </view>
+  <view class='user-promot {{hiddenId == false ? "hidden" : ""}}' catchtap='clickHidden'>
+    <view class='direction'>
+      <image class='img-promot' src='../../img/promot.png'></image>
+    </view>
+    <text class='promot-infor'>熬夜看球需要什么助兴？向下滑动，发现惊喜</text>
+  </view>
+</view>

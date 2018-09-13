@@ -1,0 +1,27 @@
+<view class="poster">
+  <view class='poster-show'>
+    <view class='poster-box {{str > 1.9 ? "poster-box-two" : "poster-box-one"}}'>
+      <!-- <image src='{{userSuredImg}}' class='getedImg'></image> -->
+      <canvas canvas-id='userImg' style='width: 100px;height: 100px;' class='draw'></canvas>
+      <image src='{{firstImg}}' class='{{str > 1.9 ? "userPoster-two" : "userPoster-one"}}'></image>
+    </view>
+  </view> 
+  <view class='sel-poster clearfix'>
+    <scroll-view class='poster-small {{str > 1.9 ? "poster-small-two" : "poster-small-one"}}' scroll-x="true">
+      <view class='scroll-box {{str > 1.9 ? "scroll-box-two" : "scroll-box-one"}} {{item.posterId == posterId ? "poster-selected" : ""}}' wx:for="{{posterArr}}" bindtap='selectedPoster' id="{{item.posterId}}">
+        <image src='{{item.posterUrl}}'></image>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='botton-btn'> 
+    <form class='s-button'>
+       <button class='btn-face btn-reset' open-type='share' bindtap='shareFriends'>分享给好友</button> 
+    </form>
+    <form class='s-button'>
+       <button class='btn-face btn-reset' bindtap='keepYourLikePoster'>保存到相册</button> 
+    </form>
+  </view>   
+</view>
+<view class='canvas'>
+  <canvas canvas-id='canvas' style='width:{{posterWidth}}px;height:{{posterHeight}}px;'></canvas>
+</view>

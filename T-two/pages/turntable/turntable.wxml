@@ -1,0 +1,2 @@
+<!--turntable.wxml-->
+<web-view class="webview" src="https://api.koopoo.com.cn/SmallGames/drawLots/index.html?userId={{userIdTrans}}"></web-view>

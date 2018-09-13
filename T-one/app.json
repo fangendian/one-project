@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/show/show",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user-preview/user-preview",
+    "pages/poster/poster",
+    "pages/world-cup/world-cup",
+    "pages/world-cup-preview/world-cup-preview",
+    "pages/world-cup-poster/world-cup-poster",
+    "pages/selectedImg/selectedImg"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "V啊世界杯",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "join-us": "../joinUs/joinUs"
+  }
+}

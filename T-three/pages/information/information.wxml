@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<scroll-view scroll-y class='background'>
+  <!-- <view class="center p-t-25 p-b-25">
+    <text class='age'></text>
+  </view> -->
+  <view style='padding:0 40rpx;'>
+    <view class='p-t-25 p-b-25' >
+      <view animation="{{animation1Action}}" class="ageInput {{animation1Class}}" >
+        <input focus="true" bindinput="ageInput" maxlength="2" type="number" placeholder-class="phcolor"  placeholder="请输入你的年龄"/>
+      </view>
+    </view>
+    <view class='p-t-25 p-b-25'>
+      <picker class='constellationChioce' bindchange="constellationChioce" value="{{constellationIndex}}"
+      range="{{constellations}}">  
+        <view>{{constellations[constellationIndex]}}</view>  
+        <text class='arrow'></text>
+      </picker>  
+    </view>
+
+    <!-- <view wx:if="{{!showSex}}" class="center p-t-25 p-b-25">
+      <text class='sex'></text>
+    </view>
+    <radio-group wx:if="{{!showSex}}" animation="{{animation2Action}}" class="sexRadio" bindchange="radioChange">
+      <label class="sexRadio_1" wx:for="{{items}}" wx:for-index="index">
+        <radio class="{{index==0? 'male':''}} {{index==1? 'female':''}}" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group> -->
+
+    <view class="center p-t-10 p-b-25">
+      <!--male  -->
+      <form report-submit='true' bindsubmit='sexChange' data-sex='1'>
+        <button  class='sex-background formId-btn' form-type='submit' 
+                style='{{sex===1?"background-color:#aaedd8;":""}}'>
+          <view class='section-sex'> <image mode='widthFix' style='width:100rpx'
+          src='/images/information/{{sex===1?"xingbienan-select.png":"xingbienan.png"}}'></image> </view>
+          <view class='section-sex'> <image mode='widthFix' style='width:160rpx' src='/images/information/nan.png'></image> </view>
+        </button>
+      </form>
+    <!--female  -->
+      <form report-submit='true' bindsubmit='sexChange' data-sex='2' >
+        <button class='sex-background formId-btn' form-type='submit'
+                style='{{sex===2?"background-color:#f39aad;":""}}'>
+          <view class='section-sex'> <image mode='widthFix' style='width:80rpx' 
+          src='/images/information/{{sex===2?"xingbienv-select.png":"xingbienv.png"}}'></image> </view>
+          <view class='section-sex'> <image mode='widthFix' style='width:160rpx' src='/images/information/nv.png'></image> </view>
+        </button>
+      </form>
+    </view>
+
+    <!-- <view class="center p-t-25 p-b-25">
+      <text class='constellation'></text>
+    </view> -->
+    
+    <view class="center p-t-10 m-b-20">
+      <!-- <text class='start' bindtap="start"></text> -->
+      <form report-submit='true' bindsubmit='start'>
+        <button class='startButton formId-btn btn-big' form-type='submit'>去测试 !</button>
+      </form>
+    </view>
+  </view>
+</scroll-view>

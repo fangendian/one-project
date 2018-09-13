@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="background">
+  <view class='back-top'>
+    <view class="percent">
+      <image src="../../images/matching.jpg" class='user-img'></image>
+      <view class='m-t-10' style='text-align: center;margin-bottom:20rpx;'>
+        <text style='color: #fff;'>我和好友的匹配度</text>
+      </view>
+      <image src="{{user1Img}}" class='user1'></image>  
+      <view class='progress'>
+        <view class='m-t-10' style='text-align: center;color: #fff;font-size: 50rpx;'>
+          <text style='text-align: center;'>{{matchList[0].matchValue}}%</text>
+        </view>
+        <view class='mate'>
+          <view class='mate-bar' style="width:{{Width}}%;"></view>
+        </view>
+      </view>
+      <image src="{{matchList[0].avatarUrl}}" class='user2'></image>
+      <view class="userName">
+        <text class="userName1">{{user1||''}}</text>
+        <text class="userName2">{{user2||''}}</text>
+      </view> 
+    </view> 
+    <view class="rankingBox"> 
+      <scroll-view  scroll-y="true" class="rankings">
+        <view style="height:{{view.height3}}" class="ranking {{index==0? 'firstRanking':''}} {{index%2==0? '':'even'}}" wx:for="{{matchList}}" wx:for-item="item" wx:for-index="index">
+          <text wx:if="{{index==0}}" class="rankingIcon1 {{index==0? 'firstRankingIcon':''}} {{index==1? 'secondRankingIcon':''}} {{index==2? 'thirdRankingIcon':''}}"></text>
+          <text wx:elif="{{index==1||index==2}}" class="rankingIcon2 {{index==0? 'firstRankingIcon':''}} {{index==1? 'secondRankingIcon':''}} {{index==2? 'thirdRankingIcon':''}}"></text> 
+          <text wx:else class="rankingIcon3 {{index==0? 'firstRankingIcon':''}} {{index==1? 'secondRankingIcon':''}} {{index==2? 'thirdRankingIcon':''}}">{{index+1}}</text>
+          <image wx:if="{{index<2||index==2}}" src="{{item.avatarUrl}}" class="otherUserUrl1"></image>
+          <image wx:else src="{{item.avatarUrl}}" class="otherUserUrl2"></image>
+          <text class="otherUserName">{{item.nickName}}</text>
+          <text class="{{index>2?'matchValue2':'matchValue1'}}">{{item.matchValue}}%</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class='bottomBtnGroup'>
+    <block>
+       <form report-submit='true' bindsubmit='shareSomething' class='btn-click prever'>
+        <image src="../../images/share.png" class='load-other'></image>
+        <button class='bottomBtn share-Btn left-btn' open-type="share" form-type='submit'>去别的群看看</button>
+      </form>
+      <!-- <form report-submit='true' bindsubmit='sendRedenvelop' class='btn-click next'>
+        <image src="../../images/gift.png" class='free-thing'></image>
+        <button class='bottomBtn reward-Btn right-btn' form-type='submit'>{{jumpInfor.appSynopsis}}</button>
+      </form> -->
+    </block>
+  </view>
+  <view class='shareThings'>大牌好物免费抢</view>
+  <view class='free-box'>
+    <view class='free-detail' bindtap='jumpMiniprogram' wx:for='{{freeLoop}}' id='{{item.id}}' data-productionid='{{item.productionid}}'>
+      <image src='{{item.imageurl2}}' class='img-detail'></image>
+      <view class='goods-detail'>
+        <text class='price'>￥</text><text class='money'>{{item.present_price}}</text>
+        <text class='prices'>￥{{item.original_price}}</text>
+        <text class='gloabl-goods'>{{item.name}}</text>
+        <image src='../../images/qiang.png' class='free-img'></image>
+      </view>
+    </view>
+  </view>
+</view>

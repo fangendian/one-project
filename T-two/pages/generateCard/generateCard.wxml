@@ -1,0 +1,15 @@
+<!--pages/main/index.wxml-->
+<view>
+       <image style="width:{{phoneWidth}}px;height:{{phoneHeight}}px" bindtap="previewImg" mode="aspectFit" src="{{imagePath}}"></image> 
+    <!-- <image class="image" bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>       -->
+    <!-- <view class="image" bindtap="previewImg"></view>   -->
+</view>
+
+<view>
+    <canvas class="{{canvasHidden? 'canvas-Hidden':'canvasShow'}}" canvas-id="mycanvas"/>
+</view> 
+
+
+<!-- <view class="{{canvasHidden? 'canvas-Hidden':'canvasShow'}}">
+    <canvas class="canvas" canvas-id="mycanvas"/>
+</view> -->

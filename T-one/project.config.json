@@ -1,0 +1,94 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.8",
+	"appid": "wx4c088a005fedf8c7",
+	"projectname": "Cup-World",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "logs",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user-preview",
+					"pathName": "pages/user-preview/user-preview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "poster",
+					"pathName": "pages/poster/poster",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "world-cup",
+					"pathName": "pages/world-cup/world-cup",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "world-cup-preview",
+					"pathName": "pages/world-cup-preview/world-cup-preview",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "world-cup-poster",
+					"pathName": "pages/world-cup-poster/worlr-cup-poster",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "select",
+					"pathName": "pages/selectedImg/selectedImg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "show",
+					"pathName": "pages/show/show",
+					"query": ""
+				}
+			]
+		}
+	}
+}

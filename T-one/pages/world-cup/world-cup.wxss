@@ -1,0 +1,120 @@
+.world-cup {
+  width: 100%;
+  height: auto;
+}
+.img-cup {
+  width: 250px;
+  height: 250px;
+  background: #fafafa; 
+  margin: 20rpx auto 40rpx;
+  border-radius: 10rpx;
+  position: relative;
+}
+.img-box {
+  width: 250px;
+  height: 250px; 
+  background: #ccc;
+  border-radius: 50%;  
+  overflow: hidden;          
+}
+.slider-img {
+  width: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.top {
+  position: relative;
+  top: 15rpx;
+}
+.slider-one {
+  height: 91px;
+}
+.slider-two {
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #fff;
+}
+.select-yours {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+.you-like {
+  font-size: 30rpx;
+  margin-left: 35rpx;
+}
+.nation-flag {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.scroll-box {
+  width: 100vw;
+  height: 342rpx;
+  white-space: nowrap;
+  font-size: 0;
+}
+.flag-box {
+  width: 170rpx;
+  height: auto;
+  display: inline-block;
+  white-space:normal;
+}
+.flag-detail {
+  width: 170rpx;
+  height: 157rpx;
+  text-align: center;
+  position: relative;
+}
+.click-sel {
+  width: 22rpx;
+  height: 22rpx;
+  background-size: 100% 100%;
+  position: absolute;
+  display: none;
+}
+.show-normal {
+  position: relative;
+  top: -170rpx;
+}
+.show {
+  display: block;
+  top: 78rpx; 
+  right: 35rpx; 
+}
+.show-one {
+  display: block;
+  bottom: 25rpx;
+  right: 30rpx
+}
+.small-flag {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin: 15rpx auto 8rpx;
+  display: block;
+}
+.first-flag {
+  width: 110rpx;
+  height: 143rpx;
+  margin: 0 auto;
+  display: block;
+}
+.flag-name {
+  color: #707071;
+  font-size: 20rpx;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.promt {
+  font-size: 22rpx;
+  color: #ccc;
+  margin: 10rpx 20rpx;
+  display: block;
+}

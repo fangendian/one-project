@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<scroll-view scroll-y class='background'>
+  <view class="center p-t-25 p-b-25">
+    <text class='age'></text>
+  </view>
+  <view animation="{{animation1Action}}" class="ageInput {{animation1Class}}">
+    <input focus="true" bindinput="ageInput" maxlength="2" type="number" placeholder-class="phcolor"  placeholder="你的年龄是？"/>
+  </view>
+  <view wx:if="{{showSex}}" class="center p-t-25 p-b-25">
+    <text class='sex'></text>
+  </view>
+  <radio-group wx:if="{{showSex}}" animation="{{animation2Action}}" class="sexRadio" bindchange="radioChange">
+    <label class="sexRadio_1" wx:for="{{items}}" wx:for-index="index">
+      <radio class="{{index==0? 'male':''}} {{index==1? 'female':''}}" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+  <view class="center p-t-25 p-b-25">
+    <text class='constellation'></text>
+  </view>
+  <picker class='constellationChioce' bindchange="constellationChioce" value="{{constellationIndex}}"
+   range="{{constellations}}">  
+    <view>{{constellations[constellationIndex]}}</view>  
+    <text class='arrow'></text>
+  </picker>  
+  <view class="center p-t-50 p-b-25">
+    <form report-submit='true' bindsubmit='start'>
+      <button class='start formId-btn' form-type='submit'></button>
+    </form>
+  </view>
+</scroll-view>

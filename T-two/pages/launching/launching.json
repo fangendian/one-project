@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "join-us": "../joinUs/joinUs",
+    "authorize": "../components/authorize/authorize"
+  }
+}

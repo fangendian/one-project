@@ -1,0 +1,50 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128px;
+  margin: 20px;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.myVideo{
+  width:100%;
+  height:212px;
+}
+/*自己写的样式代码！！！*/
+.background{
+  width:100%;
+  height:100vh;
+  background-image: url('http://img.zcool.cn/community/01afc55a0e5bf1a801204a0e7bb7ed.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.logo{
+  width:35px;
+  height:35px;
+  display:block;
+  margin:0 auto;
+  background-image:url("http://img.zcool.cn/community/01ac035a0c192ca80121985cd99d73.png@1280w_1l_2o_100sh.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: absolute;
+  top:88vh;
+  left:45%;
+}
+.logoText{
+  color:#bbb;
+  font-size:13px;
+  position:absolute;
+  top:95vh;
+  text-align: center;
+  left:31%;
+}
